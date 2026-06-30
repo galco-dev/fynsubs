@@ -69,7 +69,7 @@ export function HeroSection() {
         </div>
 
         {/* Map */}
-        <div style={{ width: "500px", height: "400px", position: "relative" }}>
+        <div style={{ width: "500px", height: "400px", position: "relative", marginLeft: "0" }}>
           <iframe
             src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
             style={{ width: "100%", height: "100%", border: 0 }}
