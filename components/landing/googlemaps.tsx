@@ -64,42 +64,22 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
             <span className="w-8 h-px bg-foreground/30" />
-            Hosting for service businesses
+            Our location
           </span>
+        </div>
+
+        {/* Map */}
+        <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+          <iframe
+            src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            />
         </div>
         
         {/* Main headline */}
-        <div className="mb-12">
-          <h1 
-            className={`text-[clamp(3rem,12vw,10rem)] font-display leading-[0.9] tracking-tight transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-          >
-            <span className="block">
-              Get{" "}
-              <span className="relative inline-block">
-                <span 
-                  key={wordIndex}
-                  className="inline-flex"
-                >
-                  {words[wordIndex].split("").map((char, i) => (
-                    <span
-                      key={`${wordIndex}-${i}`}
-                      className="inline-block animate-char-in"
-                      style={{
-                        animationDelay: `${i * 50}ms`,
-                      }}
-                    >
-                      {char}
-                    </span>
-                  ))}
-                </span>
-                <span className="absolute -bottom-2 left-0 right-0 h-3 bg-foreground/10" />
-              </span>
-              .
-            </span>
-          </h1>
-        </div>
+        
         
         {/* Description */}
         
