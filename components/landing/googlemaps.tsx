@@ -85,7 +85,7 @@ export function HeroSection() {
         {/* Description */}
         
         
-      </div>
+      
       
       {/* Stats marquee - full width outside container */}
       
