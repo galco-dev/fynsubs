@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Infrastructure", href: "#infrastructure" },
   { name: "Trust", href: "#security" },
   { name: "Contact", href: "#contact" },
-  { name: "about Trade", href: "/abouttrade"},
+  { name: "about Trade", href: "/fynsubs/abouttrade"},
 ];
 
 export function Navigation() {
