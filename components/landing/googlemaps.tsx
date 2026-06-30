@@ -55,30 +55,29 @@ export function HeroSection() {
         ))}
       </div>
       
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
+    
         {/* Location block */}
-        <div classname="lg:[margin-left:-600px]">
-          <div 
-            className={`mb-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
-              <span className="w-8 h-px bg-foreground/30" />
-              Our location
-            </span>
-          </div>
-
-          {/* Map */}
-          <div className="w-full max-w-[500px] h-[250px] lg:h-[400px]">
+        <div className="relative z-10 px-6 lg:px-12 py-32 lg:py-40">
+        <div
+          className={`transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          } w-full lg:w-[500px]`}
+        >
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
+            <span className="w-8 h-px bg-foreground/30 inline-block" />
+            Our location
+          </span>
+          <div className="w-full h-[250px] lg:h-[420px] lg:w-[500px]">
             <iframe
               src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
               style={{ width: "100%", height: "100%", border: 0 }}
               loading="lazy"
               allowFullScreen
-              />
+            />
           </div>
+        </div>
       </div>
+
         
         {/* Main headline */}
         
