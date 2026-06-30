@@ -16,14 +16,11 @@ export default function Home() {
     <main className="relative min-h-screen overflow-x-hidden noise-overlay">
       <Navigation variant="abouttrade"/>
       <HeroSection />
-      <FeaturesSection />
-      <HowItWorksSection />
-      <InfrastructureSection />
+    
+ 
+      
       <MetricsSection />
-      <IntegrationsSection />
-      <SecuritySection />
-      <DevelopersSection />
-      <TestimonialsSection />
+      
       <CtaSection />
       <FooterSection />
     </main>
