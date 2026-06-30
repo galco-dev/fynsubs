@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 export function Navigation({ variant = "main" }: { variant?: "main" | "abouttrade" }) {
   const navLinks =variant == "abouttrade"
     ?[
-      { name : "Back", href: "/"},
+      { name : "Back", href: "/fynsubs"},
       { name: "Find Us", href: "#findus"},
     ] 
     : [
