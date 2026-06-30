@@ -4,15 +4,19 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
-  { name: "Service", href: "#features" },
-  { name: "Infrastructure", href: "#infrastructure" },
-  { name: "Trust", href: "#security" },
-  { name: "Contact", href: "#contact" },
-  { name: "about Trade", href: "/fynsubs/abouttrade"},
-];
-
-export function Navigation() {
+export function Navigation({ variant = "main" }: { variant?= "main" | "abouttrade" }) {
+  const navLinks =variant == "abouttrade"
+    ?[
+      { name : "Back", href: "/"},
+      { name: "Find Us", href: "#findus"},
+    ] 
+    : [
+      { name : "Service", href: "#features"},
+      { name : "Infrastructure", href: "#infrastructure"},
+      { name : "Trust", href: "#security"},
+      { name : "Contact", href: "#contact"},
+      { name : "About Fyn", href: "/fynsubs/abouttrade"},
+    ];
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
