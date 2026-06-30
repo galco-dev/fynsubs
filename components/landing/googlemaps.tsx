@@ -56,27 +56,29 @@ export function HeroSection() {
       </div>
       
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
-        {/* Eyebrow */}
-        <div 
-          className={`mb-8 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
-            <span className="w-8 h-px bg-foreground/30" />
-            Our location
-          </span>
-        </div>
+        {/* Location block */}
+        <div classname="lg:[margin-left:-600px]">
+          <div 
+            className={`mb-4 transition-all duration-700 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          >
+            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
+              <span className="w-8 h-px bg-foreground/30" />
+              Our location
+            </span>
+          </div>
 
-        {/* Map */}
-        <div style={{ width: "500px", height: "400px", position: "relative", marginLeft: "-600px" }}>
-          <iframe
-            src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
-            style={{ width: "100%", height: "100%", border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            />
-        </div>
+          {/* Map */}
+          <div className="w-full max-w-[500px] h-[250px] lg:h-[400px]">
+            <iframe
+              src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
+              style={{ width: "100%", height: "100%", border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              />
+          </div>
+      </div>
         
         {/* Main headline */}
         
@@ -87,32 +89,7 @@ export function HeroSection() {
       </div>
       
       {/* Stats marquee - full width outside container */}
-      <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
-              {[
-                { value: "<1s", label: "Typical first paint", company: "CLOUDFLARE EDGE" },
-                { value: "300+", label: "Edge cities globally", company: "CLOUDFLARE" },
-                { value: "99.99%", label: "Network uptime", company: "CLOUDFLARE" },
-                { value: "TLS 1.3", label: "Encryption by default", company: "STRIPE / SSL" },
-              ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      
       
       {/* Scroll indicator */}
       
