@@ -21,7 +21,7 @@ export default function Home() {
  
       
       <MetricsSection />
-      
+      <CtaSection />
     
       <FooterSection />
     </main>
