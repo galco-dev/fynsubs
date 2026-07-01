@@ -20,9 +20,8 @@ import { Phone } from "lucide-react";
   Legal: [
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
-  ],*/}
-
-};
+  ],
+};*/}
 
 export function FooterSection() {
   return (
