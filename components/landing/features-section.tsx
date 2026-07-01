@@ -11,20 +11,20 @@ const features = [
   },
   {
     number: "02",
-    title: "Hosted at the edge",
-    description: "Every Fyn site runs on Cloudflare's global network. It loads fast for every visitor, in every region, automatically.",
+    title: "Community-focused",
+    description: "Local, we live and work in the community we serve. Trusted, the kind of service that earns customers for life.",
     visual: "ai",
   },
   {
     number: "03",
-    title: "Maintained quietly",
-    description: "Certificates, infrastructure, uptime — handled by Fyn in the background. The owner never logs in, never patches, never worries.",
+    title: "Customer-first",
+    description: "You come first. Every decision we make starts with what is right for you. We listen. We ask the right questions before we offer answers.",
     visual: "collab",
   },
   {
     number: "04",
-    title: "Encrypted by default",
-    description: "Managed SSL on every site. The padlock is always there. No setup, no renewals to track.",
+    title: "Integrity & Respect",
+    description: "We do what we say, and we say what we do. Your time, your money, your space — all of it matters to us.",
     visual: "security",
   },
 ];
