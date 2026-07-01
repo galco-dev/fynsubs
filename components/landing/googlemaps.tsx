@@ -7,7 +7,7 @@ import { AnimatedSphere } from "./animated-sphere";
 
 const words = ["seen"];
 
-export function HeroSection() {
+export function GoogleMaps() {
   const [isVisible, setIsVisible] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
 
@@ -65,11 +65,11 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
             <span className="w-8 h-px bg-foreground/30 inline-block" />
-            Our location
+            {{location_label}}
           </span>
           <div className="w-full h-[250px] lg:h-[420px] lg:w-[500px]">
             <iframe
-              src="https://maps.google.com/maps?q=51.5074,-0.1278&z=15&output=embed"
+              src="https://maps.google.com/maps?q={{lat}},{{lng}}&z=15&output=embed"
               style={{ width: "100%", height: "100%", border: 0 }}
               loading="lazy"
               allowFullScreen
