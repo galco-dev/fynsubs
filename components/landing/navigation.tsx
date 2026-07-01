@@ -30,26 +30,26 @@ export function Navigation({ variant = "main" }: { variant?: "main" | "abouttrad
 
   return (
     <header
-      className={`fixed z-50 transition-all duration-500 ${
+      class={`fixed z-50 transition-all duration-500 ${
         isScrolled 
           ? "top-4 left-4 right-4" 
           : "top-0 left-0 right-0"
       }`}
     >
       <nav 
-        className={`mx-auto transition-all duration-500 ${
+        class={`mx-auto transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
             ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
             : "bg-transparent max-w-[1400px]"
         }`}
       >
         <div 
-          className={`flex items-center justify-between transition-all duration-500 px-6 lg:px-8 ${
+          class={`flex items-center justify-between transition-all duration-500 px-6 lg:px-8 ${
             isScrolled ? "h-14" : "h-20"
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="#" class="flex items-center gap-2 group">
             <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>"{{name_en}}"</span>
           </a>
 
