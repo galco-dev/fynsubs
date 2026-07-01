@@ -40,7 +40,7 @@ export function CtaSection() {
         </div>
 
         {/* Contact Cards - Full width, flush to footer */}
-        <div className="grid md:grid-cols-3">
+        <div className="grid md:grid-cols-2">
 
           
 
