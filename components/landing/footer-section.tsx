@@ -3,26 +3,6 @@
 import { AnimatedWave } from "./animated-wave";
 import { Phone } from "lucide-react";
 
-{/*const footerLinks = {
-  { Service: [
-    { name: "Features", href: "#features" },
-    { name: "How it works", href: "#how-it-works" },
-    { name: "Infrastructure", href: "#infrastructure" },
-  ],
-  Trust: [
-    { name: "Security", href: "#security" },
-    { name: "Uptime", href: "#" },
-  ],
-  Company: [
-    { name: "About", href: "#" },
-    { name: "Contact", href: "#contact" },
-  ],
-  Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-  ],
-};*/}
-
 export function FooterSection() {
   return (
     <footer className="relative border-t border-foreground/10">
@@ -38,7 +18,7 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-block mb-6">
-                <span className="text-2xl font-display">{{name_en}}</span>
+                <span className="text-2xl font-display">{"{{name_en}}"}</span>
               </a>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">
