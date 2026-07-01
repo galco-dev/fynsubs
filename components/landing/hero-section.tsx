@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
 
-const words = ["Close by."];
+const words = ["Close by"];
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -88,6 +88,7 @@ export function HeroSection() {
                       className="inline-block animate-char-in"
                       style={{
                         animationDelay: `${i * 50}ms`,
+                        whiteSpace: "pre",
                       }}
                     >
                       {char}
