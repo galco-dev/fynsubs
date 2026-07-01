@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export function CtaSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +40,12 @@ export function CtaSection() {
         </div>
 
         {/* Contact Cards - Full width, flush to footer */}
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-3">
+
+          
+
+
+          
           {/* Press & General Enquiries */}
           <div
             className={`bg-foreground text-background p-8 lg:p-12 transition-all duration-700 flex flex-col ${
@@ -49,20 +54,20 @@ export function CtaSection() {
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 flex items-center justify-center border border-background/20">
-                <Mail className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
               </div>
-              <h3 className="text-xl lg:text-2xl font-display">Press & General Enquiries</h3>
+              <h3 className="text-xl lg:text-2xl font-display">Call us</h3>
             </div>
             <p className="text-background/70 leading-relaxed mb-6 flex-1">
-              For media, partnerships, and general questions. Direct enquiries to{" "}
-              <a href="mailto:press@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
+              Reach us on {"{{phone_display}}"}
+              {/*<a href="mailto:press@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
                 press@fyn.site
-              </a>
-              .
+              </a>*/}
             </p>
-            <p className="text-sm text-background/50 font-mono">
+            {/*<p className="text-sm text-background/50 font-mono">
               Response time: typically within 2 business days.
             </p>
+            */}
           </div>
 
           {/* Existing Customers */}
@@ -75,18 +80,17 @@ export function CtaSection() {
               <div className="w-12 h-12 flex items-center justify-center border border-background/20">
                 <MessageCircle className="w-5 h-5" />
               </div>
-              <h3 className="text-xl lg:text-2xl font-display">Existing Customers</h3>
+              <h3 className="text-xl lg:text-2xl font-display">Whatsapp</h3>
             </div>
             <p className="text-background/70 leading-relaxed mb-6 flex-1">
-              For account, billing, or technical support. Existing customers should reach Fyn via 
-              WhatsApp using the registered number on file. Identity is verified automatically.
+              Or send us a text
             </p>
             <p className="text-sm text-background/70 leading-relaxed">
-              If the registered number is no longer accessible, contact{" "}
-              <a href="mailto:support@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
+              {"{{phone_wa}}"}
+              {/*<a href="mailto:support@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
                 support@fyn.site
               </a>
-              {" "}from the email associated with the account.
+              {" "}from the email associated with the account.*/}
             </p>
           </div>
         </div>
