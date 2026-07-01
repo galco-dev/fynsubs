@@ -108,7 +108,7 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Fyn builds and hosts websites for small service businesses — fast, maintained, and built to perform. One less thing for an owner to think about.
+            {{name_en}} is a local business serving the UAE community with quality, honesty, and a personal touch.
           </p>
           
           {/* CTAs */}
