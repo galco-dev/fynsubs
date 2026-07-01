@@ -65,7 +65,7 @@ export function GoogleMaps() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
             <span className="w-8 h-px bg-foreground/30 inline-block" />
-            {{location_label}}
+            {"{{location_label}}"}
           </span>
           <div className="w-full h-[250px] lg:h-[420px] lg:w-[500px]">
             <iframe
