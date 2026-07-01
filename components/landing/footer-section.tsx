@@ -3,7 +3,7 @@
 import { AnimatedWave } from "./animated-wave";
 
 const footerLinks = {
-  Service: [
+  {/*Service: [
     { name: "Features", href: "#features" },
     { name: "How it works", href: "#how-it-works" },
     { name: "Infrastructure", href: "#infrastructure" },
@@ -19,6 +19,9 @@ const footerLinks = {
   Legal: [
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
+  ],*/}
+  Address: [
+    {{{address_formatted}}},
   ],
 };
 
@@ -37,7 +40,7 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="#" className="inline-block mb-6">
-                <span className="text-2xl font-display">fyn.</span>
+                <span className="text-2xl font-display">{{name_en}}</span>
               </a>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">
