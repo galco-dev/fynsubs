@@ -10,12 +10,13 @@ import { DevelopersSection } from "@/components/landing/developers-section";
 import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
+import { GoogleMaps } from "@/components/landing/googlemaps";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden noise-overlay">
       <Navigation variant="abouttrade"/>
-      <HeroSection />
+      <GoogleMaps />
     
  
       
