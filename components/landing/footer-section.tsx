@@ -62,7 +62,7 @@ export function FooterSection() {
             </div>
             
           </div>
-        </div>
+        </div>*/}
 
         {/* Bottom Bar */}
         <div className="py-8 border-t border-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4">
