@@ -18,7 +18,6 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection /> 
-      
       <MetricsSection />
       <IntegrationsSection />
       <SecuritySection />
