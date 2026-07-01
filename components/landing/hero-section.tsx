@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
 
-const words = ["seen"];
+const words = ["Close by."];
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +76,7 @@ export function HeroSection() {
             }`}
           >
             <span className="block">
-              Get{" "}
+            Quality service.{" "}
               <span className="relative inline-block">
                 <span 
                   key={wordIndex}
@@ -108,7 +108,7 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            {"{{name_en}}"} is a local business serving the UAE community with quality, honesty, and a personal touch.
+            At {"{{name_en}}"}, we know our customers have plenty of choices. That is why we focus on what matters — quality service, fair pricing, and treating every visit like the most important one.
           </p>
           
           {/* CTAs */}
