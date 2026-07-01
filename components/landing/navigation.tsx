@@ -50,7 +50,7 @@ export function Navigation({ variant = "main" }: { variant?: "main" | "abouttrad
         >
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>{{name_en}}</span>
+            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>"{{name_en}}"</span>
           </a>
 
           {/* Desktop Navigation */}
