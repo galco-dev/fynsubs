@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Built, not assembled",
-    description: "Each site is built for the business: its services, hours, and reviews already in place. No templates to wrestle, no builder to learn.",
+    title: "Service-focused",
+    description: "Quality without compromise. We do not cut corners, and we do not have to. Honest from the start. No hidden costs, no surprises, no upselling.",
     visual: "deploy",
   },
   {
