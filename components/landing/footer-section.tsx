@@ -16,7 +16,7 @@ export function FooterSection() {
         <div className="py-16 lg:py-24">
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
             {/* Brand Column */}
-            <div className="col-span-2">
+            {/*<div className="col-span-2">
               <a href="#" className="inline-block mb-6">
                 <span className="text-2xl font-display">{"{{name_en}}"}</span>
               </a>
@@ -45,7 +45,7 @@ export function FooterSection() {
               </div>
             ))} */}
 
-            <div className="col-span-2">
+            {/*<div className="col-span-2">
               <a href="#" className="inline-block mb-6">
                 <span className="text-2xl font-display">{"{{name_en}}"}</span>
               </a>
