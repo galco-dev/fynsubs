@@ -1,9 +1,10 @@
 "use client";
 
 import { AnimatedWave } from "./animated-wave";
+import { Phone } from "lucide-react";
 
-const footerLinks = {
-  {/*Service: [
+{/*const footerLinks = {
+  { Service: [
     { name: "Features", href: "#features" },
     { name: "How it works", href: "#how-it-works" },
     { name: "Infrastructure", href: "#infrastructure" },
@@ -20,9 +21,7 @@ const footerLinks = {
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
   ],*/}
-  Address: [
-    {{{address_formatted}}},
-  ],
+
 };
 
 export function FooterSection() {
@@ -48,7 +47,7 @@ export function FooterSection() {
               </p>
             </div>
 
-            {/* Link Columns */}
+            {/* Link Columns 
             {Object.entries(footerLinks).map(([title, links]) => (
               <div key={title}>
                 <h3 className="text-sm font-medium mb-6">{title}</h3>
@@ -65,7 +64,24 @@ export function FooterSection() {
                   ))}
                 </ul>
               </div>
-            ))}
+            ))} */}
+
+            <div className="col-span-2">
+              <a href="#" className="inline-block mb-6">
+                <span className="text-2xl font-display">{"{{name_en}}"}</span>
+              </a>
+              <p className="text-muted-foreground leading-relaxed mb-4 max-w-xs">
+                {"{{address_formatted}}"}
+              </p>
+              <a
+                href="tel:{{phone_e164}}"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                {"{{phone_display}}"}
+              </a>
+            </div>
+            
           </div>
         </div>
 
