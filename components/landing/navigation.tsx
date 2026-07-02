@@ -11,8 +11,8 @@ export function Navigation({ variant = "main" }: { variant?: "main" | "abouttrad
       { name: "Find Us", href: "#findus"},
     ] 
     : [
-      { name : "Service", href: "#features"},
-      { name : "Infrastructure", href: "#infrastructure"},
+      { name : "Core Pillars", href: "#features"},
+      { name : "Services", href: "#infrastructure"},
       { name : "Trust", href: "#security"},
       { name : "Contact", href: "#contact"},
       { name : "About Fyn", href: "/fynsubs/abouttrade"},
