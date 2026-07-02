@@ -6,17 +6,17 @@ const pillars = [
   {
     number: "I",
     title: "Performance",
-    description: "Every hosted site loads in under a second, in every region, on every device. Verified continuously.",
+    description: "From everyday requests to the more specialised, we are equipped to handle it.",
   },
   {
     number: "II",
     title: "Availability",
-    description: "99.99% network uptime, monitored around the clock. If one edge location fails, another serves the site instantly.",
+    description: "Our team is ready to help with whatever you need. Reach out and we will guide you through what is possible.",
   },
   {
     number: "III",
-    title: "Security",
-    description: "TLS 1.3 encryption by default. Enterprise-grade infrastructure. Payment handling that never touches Fyn's systems.",
+    title: "Simplicity",
+    description: "We keep things simple: tell us what you need, and we will tell you straight whether we can help.",
   },
 ];
 
@@ -82,9 +82,9 @@ export function HowItWorksSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            What Fyn
+            What {"{{name_en}}"}
             <br />
-            <span className="text-background/50">commits to.</span>
+            <span className="text-background/50">can offer.</span>
           </h2>
         </div>
 
