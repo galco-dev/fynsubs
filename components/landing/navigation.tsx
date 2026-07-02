@@ -12,10 +12,9 @@ export function Navigation({ variant = "main" }: { variant?: "main" | "abouttrad
     ] 
     : [
       { name : "Core Pillars", href: "#features"},
-      { name : "Services", href: "#infrastructure"},
-      { name : "Trust", href: "#security"},
+      { name : "Services", href: "#how-it-works"},
       { name : "Contact", href: "#contact"},
-      { name : "About Fyn", href: "/fynsubs/abouttrade"},
+      { name : "find us", href: "/fynsubs/abouttrade"},
     ];
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
