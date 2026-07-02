@@ -21,10 +21,10 @@ const pillars = [
 ];
 
 const mockSites = [
-  { name: "greenleaf-plumbing.fyn.site", status: "operational", latency: "18ms", uptime: "99.99%" },
-  { name: "brighton-dental.fyn.site", status: "operational", latency: "12ms", uptime: "100%" },
-  { name: "oak-avenue-salon.fyn.site", status: "operational", latency: "22ms", uptime: "99.98%" },
-  { name: "metro-auto-repair.fyn.site", status: "operational", latency: "15ms", uptime: "100%" },
+  { name: "Whatsapp", status: "Yes", latency: " ", uptime: "Online" },
+  { name: "Phone line", status: "Yes", latency: " ", uptime: "Online" },
+  { name: "Response time", status: "Yes", latency: " ", uptime: "1 Hour" },
+  { name: "Honest business", status: "Yes", latency: " ", uptime: "Guaranteed" },
 ];
 
 export function HowItWorksSection() {
@@ -135,9 +135,9 @@ export function HowItWorksSection() {
               <div className="px-6 py-4 border-b border-background/10 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                  <span className="text-sm font-mono text-background/70">Live Telemetry</span>
+                  <span className="text-sm font-mono text-background/70">Live Status</span>
                 </div>
-                <span className="text-xs font-mono text-background/40">fyn.site network</span>
+                <span className="text-xs font-mono text-background/40">Operating</span>
               </div>
 
               {/* Sites status */}
@@ -155,7 +155,7 @@ export function HowItWorksSection() {
                       <span className="text-sm font-mono text-background/70">{site.name}</span>
                     </div>
                     <div className="flex items-center gap-6 text-xs font-mono">
-                      <span className="text-background/40">{site.latency}</span>
+                      
                       <span className="text-green-400">{site.uptime}</span>
                     </div>
                   </div>
@@ -165,10 +165,10 @@ export function HowItWorksSection() {
               {/* Dashboard footer */}
               <div className="px-6 py-4 border-t border-background/10 bg-background/5">
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="text-background/40">Network Status</span>
+                  <span className="text-background/40">Open and ready to help</span>
                   <span className="text-green-400 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
-                    All systems operational
+                    Yes
                   </span>
                 </div>
               </div>
