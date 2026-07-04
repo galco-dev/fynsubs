@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Mail, MessageCircle, Phone } from "lucide-react";
-import 
 
 export function CtaSection() {
   const [isVisible, setIsVisible] = useState(false);
