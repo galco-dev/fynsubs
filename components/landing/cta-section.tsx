@@ -23,7 +23,7 @@ export function CtaSection() {
     <section id="contact" ref={sectionRef} className="relative pt-24 lg:pt-32 pb-0 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="mb-16 lg:mb-24">
+        <div className="mb-8 lg:mb-12">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
             Contact
@@ -39,7 +39,7 @@ export function CtaSection() {
 
 
         {/* Location block */}
-        <div className="relative z-10 px-6 lg:px-12 py-32 lg:py-40">
+        <div className="relative z-10 px-6 lg:px-12 py-8 lg:py-12">
           <div
             className={`transition-all duration-700 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
