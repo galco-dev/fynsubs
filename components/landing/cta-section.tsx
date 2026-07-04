@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Mail, MessageCircle, Phone } from "lucide-react";
+import 
 
 export function CtaSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,6 +36,29 @@ export function CtaSection() {
           >
             Get in touch.
           </h2>
+        </div>
+
+
+        {/* Location block */}
+        <div className="relative z-10 px-6 lg:px-12 py-32 lg:py-40">
+          <div
+            className={`transition-all duration-700 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            } w-full lg:w-[500px]`}
+          >
+            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
+              <span className="w-8 h-px bg-foreground/30 inline-block" />
+              {"{{location_label}}"}
+            </span>
+            <div className="w-full h-[250px] lg:h-[420px] lg:w-[500px]">
+              <iframe
+                src="https://maps.google.com/maps?q={{lat}},{{lng}}&z=15&output=embed"
+                style={{ width: "100%", height: "100%", border: 0 }}
+                loading="lazy"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
 
         </div>
