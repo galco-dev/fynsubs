@@ -23,7 +23,7 @@ export function CtaSection() {
     <section id="contact" ref={sectionRef} className="relative pt-24 lg:pt-32 pb-0 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="mb-8 lg:mb-12">
+        <div className="mb-4 lg:mb-12">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
             Contact
