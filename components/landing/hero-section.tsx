@@ -142,32 +142,7 @@ export function HeroSection() {
       </div>
       
       {/* Stats marquee - full width outside container */}
-      <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="flex gap-16 marquee whitespace-nowrap">
-          {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
-              {[
-                { value: "<1s", label: "Typical first paint", company: "CLOUDFLARE EDGE" },
-                { value: "300+", label: "Edge cities globally", company: "CLOUDFLARE" },
-                { value: "99.99%", label: "Network uptime", company: "CLOUDFLARE" },
-                { value: "TLS 1.3", label: "Encryption by default", company: "STRIPE / SSL" },
-              ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
-                    {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
-                  </span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+     
       
       {/* Scroll indicator */}
       
