@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 export function CtaSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,57 +21,50 @@ export function CtaSection() {
 
   return (
     <section id="contact" ref={sectionRef} className="relative pt-24 lg:pt-32 pb-0 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        {/* Header */}
-        <div className="mb-4 lg:mb-12">
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
-            <span className="w-8 h-px bg-foreground/30" />
-            Contact
+      {/* Header */}
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mb-8 lg:mb-12">
+        <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
+          <span className="w-8 h-px bg-foreground/30" />
+          Contact
+        </span>
+        <h2
+          className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          Get in touch.
+        </h2>
+      </div>
+
+      {/* Map + Cards: side by side on lg, stacked on mobile */}
+      <div className="flex flex-col lg:flex-row">
+
+        {/* Map */}
+        <div
+          className={`w-full lg:w-1/2 px-6 lg:px-12 pb-8 lg:pb-0 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
+            <span className="w-8 h-px bg-foreground/30 inline-block" />
+            {"{{location_label}}"}
           </span>
-          <h2
-            className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
-          >
-            Get in touch.
-          </h2>
-        </div>
-
-
-        {/* Location block */}
-        <div className="relative z-10 px-6 lg:px-12 py-8 lg:py-12">
-          <div
-            className={`transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            } w-full lg:w-[500px]`}
-          >
-            <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-4 block">
-              <span className="w-8 h-px bg-foreground/30 inline-block" />
-              {"{{location_label}}"}
-            </span>
-            <div className="w-full h-[250px] lg:h-[420px] lg:w-[500px]">
-              <iframe
-                src="https://maps.google.com/maps?q={{lat}},{{lng}}&z=15&output=embed"
-                style={{ width: "100%", height: "100%", border: 0 }}
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
+          <div className="w-full h-[300px] lg:h-[480px]">
+            <iframe
+              src="https://maps.google.com/maps?q={{lat}},{{lng}}&z=15&output=embed"
+              style={{ width: "100%", height: "100%", border: 0 }}
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
         </div>
 
-        </div>
+        {/* Contact Cards stacked in right column */}
+        <div className="w-full lg:w-1/2 flex flex-col">
 
-        {/* Contact Cards - Full width, flush to footer */}
-        <div className="grid md:grid-cols-2">
-
-          
-
-
-          
-          {/* Press & General Enquiries */}
+          {/* Call us */}
           <div
-            className={`bg-foreground text-background p-8 lg:p-12 transition-all duration-700 flex flex-col ${
+            className={`bg-foreground text-background p-8 lg:p-12 transition-all duration-700 flex flex-col flex-1 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -81,21 +74,14 @@ export function CtaSection() {
               </div>
               <h3 className="text-xl lg:text-2xl font-display">Call us</h3>
             </div>
-            <p className="text-background/70 leading-relaxed mb-6 flex-1">
+            <p className="text-background/70 leading-relaxed flex-1">
               Reach us on {"{{phone_display}}"}
-              {/*<a href="mailto:press@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
-                press@fyn.site
-              </a>*/}
             </p>
-            {/*<p className="text-sm text-background/50 font-mono">
-              Response time: typically within 2 business days.
-            </p>
-            */}
           </div>
 
-          {/* Existing Customers */}
+          {/* WhatsApp */}
           <div
-            className={`bg-foreground text-background p-8 lg:p-12 transition-all duration-700 delay-100 flex flex-col ${
+            className={`bg-foreground text-background p-8 lg:p-12 transition-all duration-700 delay-100 flex flex-col flex-1 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -105,18 +91,16 @@ export function CtaSection() {
               </div>
               <h3 className="text-xl lg:text-2xl font-display">Whatsapp</h3>
             </div>
-            <p className="text-background/70 leading-relaxed mb-6 flex-1">
+            <p className="text-background/70 leading-relaxed mb-4 flex-1">
               Or send us a text
             </p>
-            <p className="text-sm text-background/70 leading-relaxed">
+            <p className="text-sm text-background/70">
               {"{{phone_wa}}"}
-              {/*<a href="mailto:support@fyn.site" className="text-background underline underline-offset-4 hover:no-underline">
-                support@fyn.site
-              </a>
-              {" "}from the email associated with the account.*/}
             </p>
           </div>
+
         </div>
+      </div>
     </section>
   );
 }
